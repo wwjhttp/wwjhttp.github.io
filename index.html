@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中转站</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin:auto;
+        }
+        a{
+            display: none;
+        }
+        @media screen and (max-width: 600px){
+            h1{
+                font-size: 25px;
+            }
+        }
+    </style>
+    <script>
+        function a(){
+            document.getElementById('a').click();
+        }
+    </script>
+</head>
+<body onload="a();">
+    <a href="http://106.13.218.167" id="a"></a>
+    <h1>网站转跳中，请稍后...</h1>
+</body>
+</html>
