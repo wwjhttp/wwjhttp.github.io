@@ -4,30 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中转站</title>
+    <title>个人简介</title>
     <style>
         *{
             margin: 0;
         }
         body{
-            min-height: 100vh;
-            box-sizing: border-box;
             display: flex;
-            background-color: aqua;
+            min-height: 100vh;
+            background:
+        conic-gradient(
+            from -45deg at 400px 300px,
+            hsla(170deg, 100%, 70%, .7),
+            transparent 50%,
+            hsla(219deg, 90%, 80%, .5) 100%),
+            linear-gradient(-45deg, #060d5e, #002268);
+}
+        
+        .left{
+            /* box-shadow: -10px 10px 15px rgba(23, 26, 70, 0.91); */
+            background-color: rgb(23, 26, 70);
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 20vw;
+            height: 70vh;
+            border-radius: 0 0 15px 15px;
         }
-        h1{
+        .left img{
+            width: 100%;
+        }
+        .left p{
+            margin-top: 60px;
+            color: white;
+            font-size: 20px;
             text-align: center;
-            font-size: 40px;
-            margin:auto;
         }
-        a{
-            display: none;
+        .left h1{
+            text-align: center;
+            margin-top: 30px;
+            color: white;
         }
-        @media screen and (max-width: 600px){
-            h1{
-                font-size: 25px;
-            }
+        .left button{
+            font-size: 25px;
+            height: 7%;
+            border-width: 0;
+            background-color: rgb(63, 68, 142);
+            border-radius: 0 0 15px 15px;
         }
+        .left button:active{
+            transform: scale(0.98);
+        }
+        
+        .right{
+            width: 60vw;
+            min-height: 90%;
+            margin-left: 5vw;
+            padding: 30px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .right h2{
+            font-size: 50px;
+            color: white;
+        }
+        .left p{
+            font-size: 25px;
+        }
+        .jianjie{
+            margin-top: 20px;
+            width: 70%;
+        }
+        .jianjie p{
+            color: white;
+            font-size: 25px;
+        } 
+
+        #hr{
+            margin-top: 50px;
+            box-sizing: 1px;
+        }
+
+        .box1{
+            display: flex;
+            margin-top: 70px;
+            /* justify-content: space-between; */
+
+        }
+        .zhangs{
+            width: 100%;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            margin-top: 60px;
+            /* background-color: aliceblue */
+        }
+        .zhangs p{
+            font-size: 25px
+        }
+        .zhangs h3{
+            font-size: 60px;
+            color: green;
+        }
+        .zhangs div{
+            display: flex;
+            height: 90%;
+            width: 30%;
+            background-color: rgb(255, 255, 255, 0.5);
+            border-radius: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+        .wenzhang{
+            margin-top: 50px;
+        }
+        .wenzhang pre{
+            font-size: 25px;
+            color: white;
+        }
+        
     </style>
     <script>
         function a(){
@@ -35,8 +131,51 @@
         }
     </script>
 </head>
-<body onload="a();">
-    <a href="http://106.13.218.167" id="a"></a>
-    <h1>网站转跳中，请稍后...</h1>
+<body>
+    <a href="http://106.13.218.167" id="a" style="display: none;"></a>
+    <div class="left">
+        <div>
+            <img src="http://106.13.218.167//tool/download_file/D93246FE-3216-4D4A-9029-85DC1ACA2D45.jpeg" alt="">
+            <h1>吴伟杰</h1>
+            <p>个性签名:喜欢你啊，真的，喜欢你</p>
+        </div>
+        <button onclick="a();">其他网站</button>
+    </div>
+    <div class="right">
+        <h2>关于我</h2>
+        <div class="jianjie">
+            <p>这是一段个人简介，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+            </p>
+            <div class="box1">
+                <div style="margin-right: 25%;">
+                    <p>姓名:吴伟杰</p><br>
+                    <p>年龄: 15</p>
+                </div>
+                <div >
+                    <p>电话:19126649242</p><br>
+                    <p>邮件:1545498034@qq.com</p>
+                </div>
+            </div>
+            <hr id="hr">
+            <div class="zhangs">
+                <div>
+                    <h3>410</h3>
+                    <p>关于第一次月考成绩</p>
+                </div>
+                <div>
+                    <h3>170</h3>
+                    <p>我现在的升高</p>
+                </div>
+                <div>
+                    <h3>120</h3>
+                    <p>我的体重</p>
+                </div>
+            </div>
+            <div class="wenzhang">
+                <pre>爱意随风起，风止意难平</p>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
