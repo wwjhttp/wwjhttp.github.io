@@ -12,24 +12,19 @@
         body{
             display: flex;
             min-height: 100vh;
-            background:
-        conic-gradient(
-            from -45deg at 400px 300px,
-            hsla(170deg, 100%, 70%, .7),
-            transparent 50%,
-            hsla(219deg, 90%, 80%, .5) 100%),
-            linear-gradient(-45deg, #060d5e, #002268);
+            background-color: rgb(11, 78, 172);
+            
 }
         
         .left{
-            /* box-shadow: -10px 10px 15px rgba(23, 26, 70, 0.91); */
+            box-shadow: -10px 10px 15px rgba(23, 26, 70, 0.91);
             background-color: rgb(23, 26, 70);
             margin-left: 10%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 20vw;
-            height: 70vh;
+            height: 70%;
             border-radius: 0 0 15px 15px;
         }
         .left img{
@@ -38,7 +33,6 @@
         .left p{
             margin-top: 60px;
             color: white;
-            font-size: 20px;
             text-align: center;
         }
         .left h1{
@@ -73,8 +67,10 @@
             font-size: 25px;
         }
         .jianjie{
+            display: flex;
+            flex-direction: column;
             margin-top: 20px;
-            width: 70%;
+            width: 80%;
         }
         .jianjie p{
             color: white;
@@ -83,22 +79,18 @@
 
         #hr{
             margin-top: 50px;
-            box-sizing: 1px;
         }
 
         .box1{
             display: flex;
             margin-top: 70px;
-            /* justify-content: space-between; */
 
         }
         .zhangs{
             width: 100%;
             display: flex;
-            height: 100px;
             justify-content: space-between;
             margin-top: 60px;
-            /* background-color: aliceblue */
         }
         .zhangs p{
             font-size: 25px
@@ -116,12 +108,60 @@
             align-items: center;
             justify-content: center;
         }
-        .wenzhang{
-            margin-top: 50px;
+        .zhangs h4{
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: white;
         }
+        .wenzhang{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        
         .wenzhang p{
             font-size: 25px;
             color: white;
+        }
+        @media screen and (max-width: 600px){
+            body{
+                flex-direction: column;
+            }
+            hr{
+                width: 80vw;
+            }
+            .left{
+                width: 80%;
+            }
+            .box1{
+                width: 80vw;
+                flex-direction: column;
+            }
+
+            .zhangs {
+                width: 80vw;
+                flex-direction: column;
+            }
+            .zhangs div{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .zhangs div p{
+                display: none;
+            }
+            .zhangs h4{
+                display: block;
+            }
+            .right{
+                margin-left: 3vw;
+                height: auto;
+            }
+            .wenzhang{
+                width: 80vw;
+
+            }
         }
         
     </style>
@@ -135,7 +175,7 @@
     <a href="http://106.13.218.167" id="a" style="display: none;"></a>
     <div class="left">
         <div>
-            <img src="/1.jpeg" alt="">
+            <img src="http://wwjhttp.github.io/1.jpeg" alt="">
             <h1>吴伟杰</h1>
             <p>个性签名:喜欢你啊，真的，喜欢你</p>
         </div>
@@ -158,28 +198,29 @@
             </div>
             <hr id="hr">
             <div class="zhangs">
+                <h4>第一次月考成绩</h4>
                 <div>
                     <h3>410</h3>
-                    <p>关于第一次月考成绩</p>
+                    <p>第一次月考成绩</p>
                 </div>
+                <h4>现在的身高</h4>
                 <div>
                     <h3>170</h3>
-                    <p>我现在的升高</p>
+                    <p>我的身高</p>
                 </div>
+                <h4>我的体重</h4>
                 <div>
                     <h3>120</h3>
                     <p>我的体重</p>
                 </div>
             </div>
             <div class="wenzhang">
-                <p>爱意随风起，风止意难平</p>
-                <p>逃避可能不是最好的办法，但一定是最简单的办法</p>
-                <p>任何借口都是你不想面对问题而自己幻想的--<<被讨厌的勇气>>
-                </p>
+                <p>爱意随风起，风止意难平</p><br>
+                <p>逃避可能不是最好的办法，但一定是最简单的办法</p><br>
+                <p>任何借口都是你不想面对问题而自己幻想的<br>--<<被讨厌的勇气>></p><br>                
             </div>
 
         </div>
     </div>
 </body>
 </html>
-
